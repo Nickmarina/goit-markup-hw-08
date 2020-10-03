@@ -1,0 +1,72 @@
+/* секция клиентов */
+.client-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .client-list{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.client-list__item{
+    flex-basis: 100%/2;
+
+    // ДОЛЖНО БЫТЬ 30PX
+    margin-right: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;    
+
+    transition: border 250ms $timing-cubic;
+      
+    
+    @media screen and (max-width: 767px){
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: $desktop){
+        width: calc((100% - 150px)/6);
+        margin-bottom: 0;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &:hover,
+    &:focus{
+        border: 1px solid $selection-color;
+    }
+}
+
+
+.client-list__icon{
+    width: 210px;
+    height: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    fill: $icon-color;
+    transition:fill 250ms $timing-cubic;
+
+    @media screen and (min-width: $desktop){
+        width: 170px;  
+    }
+
+    .client-list__item:hover &,
+    .client-list__item:focus &{
+        fill: $selection-color;
+    }
+}

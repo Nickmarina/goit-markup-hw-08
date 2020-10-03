@@ -1,0 +1,27 @@
+/*навигация header*/
+.nav-list{
+    @media screen and (min-width: $tablet) {
+        display: flex; 
+    }
+  
+}
+
+.nav-list__item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $timing-cubic;
+
+
+    &:not(:last-child){
+    margin-right: 50px;
+    }
+
+    &:hover,
+    &:focus{
+        color: $selection-color;
+    }
+}
+

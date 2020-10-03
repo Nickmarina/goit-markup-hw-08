@@ -1,0 +1,99 @@
+html{
+    box-sizing: border-box;
+}
+
+/* обнуление margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* cписки-ссылок */
+ul a{
+    color:inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* контейнер */
+.container{
+    // width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $mobile){
+        width: $mobile;
+        // background-color: aqua;
+    }
+
+    @media screen and (min-width: $tablet){
+        width: $tablet;
+        // background-color: violet;
+    }
+
+    @media screen and (min-width: $desktop){
+        width: $desktop;
+        // background-color: yellow;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+body{
+    color: $header-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*   заголовки страницы */ 
+.content-title{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: $desktop){
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}

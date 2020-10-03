@@ -1,0 +1,24 @@
+/* логотип*/
+.logo{
+    margin: 0;
+    padding: 0;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    &__color{
+    color: $selection-color;
+    }
+
+    &__foot-color{
+    color: $white-color;
+    }
+}
+ 
+

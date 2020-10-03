@@ -1,0 +1,34 @@
+/* header контакты */
+.contact-list{
+    display: flex;
+    margin-left: auto;
+
+    .item:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.contact-list__link{
+    display: inline-flex;
+    color: $paragraph-color;
+    transition: color 250ms $timing-cubic;
+
+    &:hover,
+    &:focus{
+    color: $selection-color;
+    }
+}
+
+.contact-list__icon{
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $icon-color;
+    transition: fill 250ms $timing-cubic;
+
+    .contact-list__link:hover &,
+    .contact-list__link:focus &{
+        fill: $selection-color;
+    }
+  }

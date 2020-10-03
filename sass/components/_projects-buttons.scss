@@ -1,0 +1,28 @@
+.projects__button{
+    padding: 6px 22px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+    background: $background;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    transition: background-color 250ms $timing-cubic, color 250ms $timing-cubic;
+
+    @media screen and (min-width: $tablet){
+        margin-bottom: 0;
+    }
+
+    &:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus{
+        background-color: $selection-color;
+        color: $white-color;
+    }
+}

@@ -1,0 +1,25 @@
+@import "./utils/_variables";
+@import "./base/common";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./components/logo";
+@import "./layouts/navigation";
+@import "./components/main-page";
+@import "./layouts/contacts";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/features";
+@import "./layouts/command-section";
+@import "./components/social_networks";
+@import "./layouts/client-section";
+@import "./layouts/footer";
+@import "./components/adress";
+@import "./components/mail-form";
+@import "./layouts/modal";
+@import "./components/modal-form";
+
+// PORTFOLIO
+
+@import "./layouts/projects-section";
+@import "./components/projects-buttons";
+@import "./components/project_thumb";

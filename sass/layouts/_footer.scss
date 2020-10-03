@@ -1,0 +1,36 @@
+.page-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $sections-background;
+    color: $white-color;
+    text-align: center;
+
+    .footer{
+        @media screen and (min-width: $tablet){
+            display:flex;
+            align-items: baseline; 
+        }
+        
+    }
+}
+
+.social{
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: $desktop){
+        margin-right: 93px;
+        padding-bottom: 0px;
+    }
+    
+
+    h2{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+
+

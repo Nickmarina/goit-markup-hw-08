@@ -1,0 +1,68 @@
+.social-list{
+    display: flex;
+    justify-content: center;
+}
+.social-list__item{
+    width: 44px;
+    margin-right: 10px; 
+    padding: 0;
+    
+    &:last-child{
+    margin-right: 0;
+    }
+}
+
+.social-list__icon{
+    width: 44px;
+    height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    fill: $icon-color;
+
+    transition: fill 250ms $timing-cubic, background-color 250ms $timing-cubic;
+    
+    &:hover, 
+    &:focus{
+    border:1px;
+    border-radius: 50%; 
+    fill: $white-color;
+    background-color: $selection-color;    
+    }
+}
+
+// линки футтер
+.links-list{
+    display:flex;
+    justify-content: center;
+}
+
+.links-list__item{
+    width: 44px;
+    margin-right: 10px;
+    
+    &:last-child{
+    margin-right: 0;
+    }
+}
+
+.links-list__icon{
+    width: 44px;
+    height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;   
+    background: rgba(255, 255, 255, 0.1);
+    fill: $icon-color;
+    transition: fill 250ms $timing-cubic, background-color 250ms $timing-cubic;
+
+    &:hover,
+    &:focus {
+        border:1px;
+        border-radius: 50%; 
+        fill: $white-color;
+        background-color: $selection-color; 
+    }
+}
+
+    

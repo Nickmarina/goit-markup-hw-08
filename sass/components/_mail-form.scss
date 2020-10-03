@@ -1,0 +1,53 @@
+.mail-form{
+
+    label{
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    .field{
+        @media screen and (min-width: $desktop){
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+        
+
+    input{
+        margin-bottom: 20px;
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        background-color: inherit;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-bottom: 0px;
+    }
+
+    & :placeholder-shown{
+        padding-left: 16px;
+    }
+}
+
+.mail-form__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon{
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        fill: $white-color;
+    }
+}

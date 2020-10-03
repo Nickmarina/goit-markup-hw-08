@@ -1,0 +1,85 @@
+/* блок с описанием преимуществ */
+.advantages-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.advantages-list{
+    text-align: center;
+    @media screen and (min-width: $tablet){
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    
+
+    .icon{
+        width: 450px;
+        height: 120px;
+        padding-top:25px;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        background-color: $background;
+
+        @media screen and (min-width: $tablet) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
+    }
+
+    h2{
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        }
+
+    p{
+        color: $paragraph-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+}
+
+.advantages-list__item{
+    @media screen and (max-width: 1199px){
+        margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    // РОЗОБРАТЬСЯ С ФЛЕКСОМ В ТАБЛЕТКЕ
+
+    // @media screen and (min-width: $tablet){
+    //     width: calc((100% - 30px)/2);
+    //     margin-right: 30px;
+     
+    //      &:last-child{
+    //      margin-right: 0;
+    //      }   
+    // }
+
+    @media screen and (min-width: $desktop){
+        width: calc((100% - 90px)/4);
+        margin-right: 30px;
+     
+         &:last-child{
+         margin-right: 0;
+         }   
+    }
+   
+}
