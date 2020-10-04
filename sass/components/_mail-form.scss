@@ -8,12 +8,18 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        @media screen and (min-width: $desktop) {
+            text-align: left;
+        }
     }
     
     .field{
+        display: block;
+        text-align: center;
+
         @media screen and (min-width: $desktop){
             display: inline-flex;
-            align-items: center;
         }
     }
         

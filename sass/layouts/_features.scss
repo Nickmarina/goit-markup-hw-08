@@ -4,7 +4,7 @@
 .features-section{
     padding-bottom: 94px;   
 
-    @media screen and (max-width: 1199px){
+    @media screen and (max-width: $before-desktop){
         display: none;
     }
     

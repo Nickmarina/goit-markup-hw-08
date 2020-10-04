@@ -1,11 +1,16 @@
 /* header контакты */
 .contact-list{
-    display: flex;
-    margin-left: auto;
+    @media screen and (min-width: $desktop){
+        display: flex;
+        margin-left: auto;
 
-    .item:not(:last-child){
-        margin-right: 50px;
+        .item:not(:last-child){
+            margin-right: 50px;
+        }
     }
+   
+
+    
 }
 
 .contact-list__link{

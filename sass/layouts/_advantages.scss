@@ -54,25 +54,29 @@
 }
 
 .advantages-list__item{
-    @media screen and (max-width: 1199px){
+      @media screen and (max-width: $before-desktop){
+        width: 100%;
         margin-bottom: 30px;
+      } 
 
-        &:last-child{
-            margin-bottom: 0px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        
+  
+
+    @media screen and (min-width: $tablet) and (max-width: $before-desktop){
+        width: calc((100% - 30px)/2);
+        margin-right: 30px;
+     
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
         }
     }
-
-    // РОЗОБРАТЬСЯ С ФЛЕКСОМ В ТАБЛЕТКЕ
-
-    // @media screen and (min-width: $tablet){
-    //     width: calc((100% - 30px)/2);
-    //     margin-right: 30px;
-     
-    //      &:last-child{
-    //      margin-right: 0;
-    //      }   
-    // }
-
     @media screen and (min-width: $desktop){
         width: calc((100% - 90px)/4);
         margin-right: 30px;
