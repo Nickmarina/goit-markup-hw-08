@@ -1,27 +1,52 @@
 /*навигация header*/
 .nav-list{
+    @media screen and (max-width: $before-tablet){
+        margin-bottom: 60px;
+    }
+    
     @media screen and (min-width: $tablet) {
         display: flex; 
+        margin-right: 84px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 0;
     }
   
 }
 
 .nav-list__item{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color 250ms $timing-cubic;
 
+    @media screen and (max-width: $before-tablet){
+        margin-bottom: 40px;
 
-    &:not(:last-child){
-    margin-right: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
+
+    @media screen and (min-width: $tablet){
+        &:not(:last-child){
+            margin-right: 50px;
+        }        
+    }
+    // position: relative; 
 
     &:hover,
     &:focus{
         color: $selection-color;
+    }
+}
+
+.menu-container{
+    @media screen and (min-width: $tablet){
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: $desktop){
+        align-items: baseline;
     }
 }
 

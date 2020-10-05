@@ -1,10 +1,52 @@
-.menu-button{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    border: none;
+@media screen and (max-width: $before-tablet){
+    .menu-button{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        display: inline-block;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        transition: fill 250ms $timing-cubic;
 
-    .icon-cross{
+        &:hover,
+        &:focus{
+        fill: $selection-color;
+    }
+    
+        .icon-cross{
+            display: none;
+        }
+
+        // .icon-menu{
+        //     padding: 15px;
+        // }
+    }
+    
+    .menu-button.is-open .icon-cross{
+        display: block;
+
+    }
+    
+    .menu-button.is-open .icon-menu{
+        display: none;
+    }
+    
+    .menu-container{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 60px;
+        background-color: $white-color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: $tablet){
+    .menu-button{
         display: none;
     }
 }

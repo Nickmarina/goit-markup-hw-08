@@ -7,17 +7,29 @@
         .item:not(:last-child){
             margin-right: 50px;
         }
-    }
-   
-
+     }
     
-}
+ }
 
 .contact-list__link{
     display: inline-flex;
     color: $paragraph-color;
     transition: color 250ms $timing-cubic;
 
+    &:first-child{
+        @media screen and (min-width: $mobile){
+            margin-bottom: 16px;
+        }
+
+        @media screen and (min-width: $tablet){
+            margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: $desktop){
+            margin-bottom: 0;
+        }
+    }
+    
     &:hover,
     &:focus{
     color: $selection-color;
@@ -27,7 +39,7 @@
 .contact-list__icon{
     align-items: center;
     width: 16px;
-    height: 16px;
+    height: 14px;
     margin-right: 10px;
     fill: $icon-color;
     transition: fill 250ms $timing-cubic;

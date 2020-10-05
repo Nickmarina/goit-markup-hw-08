@@ -1,15 +1,22 @@
 .header{
-    
+    position: relative;
     border-bottom: 1px solid #ECECEC;
     background-color: $white-color;  
+    
     
     .navigation{
 
         @media screen and (min-width: $tablet) {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
         }   
+
+        @media screen and (min-width: $desktop){
+            justify-content: start;          
         }
+    }
+
+
         
 }
