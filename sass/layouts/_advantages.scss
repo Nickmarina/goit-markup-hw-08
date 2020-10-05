@@ -19,12 +19,16 @@
     
 
     .icon{
-        width: 450px;
         height: 120px;
         padding-top:25px;
         padding-bottom: 25px;
         margin-bottom: 30px;
         background-color: $background;
+
+        @media screen and (min-width: $mobile){
+            width: 450px;
+            
+        }
 
         @media screen and (min-width: $tablet) {
             width: 354px;

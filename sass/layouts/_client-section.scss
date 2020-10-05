@@ -9,14 +9,17 @@
     }
 
     .client-list{
-        display:flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        text-align: center;
+        @media screen and (min-width: $mobile){
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
     }
 }
 
 .client-list__item{
-    flex-basis: 100%/2;
+    
 
     // ДОЛЖНО БЫТЬ 30PX
     margin-right: 25px;
@@ -27,8 +30,9 @@
 
     transition: border 250ms $timing-cubic;
       
-    
-    @media screen and (max-width: $before-tablet){
+    @media screen and (min-width: $mobile) and (max-width: $before-tablet){
+        flex-basis: 100%/2;
+        
         &:nth-child(2n){
             margin-right: 0;
         }
@@ -36,6 +40,7 @@
             margin-bottom: 0;
         }
     }
+    
 
     @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
         &:nth-child(3n){
