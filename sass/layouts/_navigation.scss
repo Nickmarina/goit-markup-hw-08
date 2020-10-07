@@ -1,5 +1,6 @@
 .menu-container{
     @media screen and (max-width: $before-tablet){
+        max-width: $mobile;
         z-index: 1;
         display: none;
         position: absolute;

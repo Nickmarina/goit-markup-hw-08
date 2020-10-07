@@ -33,6 +33,7 @@
 }
 
 .projects-list__item{
+    max-width: $mobile;
     margin-bottom: 30px;
     overflow: hidden;
     background-color: $white-color;
