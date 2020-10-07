@@ -10,24 +10,23 @@
 </head>
 <body>
     <header class="header">
-        <div class="container navigation">   
+        <div class="container header-navigation">   
             <a href ="./index.html" class="logo"><span class="logo__color">Web</span>Studio</a>  
-            <button type="button" class="menu-button is-hidden"
-                aria-expanded="false"
-                aria-controls="menu-container" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon-cross" href="./images/sprite.svg#icon-burger-close"></use>
-                <use class="icon-menu" href="./images/sprite.svg#icon-burger-menu"></use>
+            <button type="button" class="menu-button" 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="icon">
+                <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+                <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             </svg>
             </button>   
-            <div class="menu-container" id="menu-container" data-menu>
-                <nav>
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a href="./index.html"> <span class="main-page">Студия</span> </a></li>
-                        <li class="nav-list__item"><a href="./portfolio.html">Портфолио</a></li>
-                        <li class="nav-list__item"><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>  
+            <nav class="menu-container" id="menu-container" data-menu>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html"> <span class="main-page">Студия</span> </a></li>
+                    <li class="nav-list__item"><a href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-list__item"><a href="#contacts">Контакты</a></li>
+                </ul>  
                 <ul class="contact-list">
                     <li class="item"> 
                         <a href="mailto:info@devstudio.com" class="contact-list__link">
@@ -42,7 +41,7 @@
                             </svg>
                             +38 096 111 11 11</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
     
