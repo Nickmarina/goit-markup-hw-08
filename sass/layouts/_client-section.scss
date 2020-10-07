@@ -22,13 +22,13 @@
 .client-list__item{
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid #a3accc;
     box-sizing: border-box;
     border-radius: 4px;    
 
     transition: border 250ms $timing-cubic;
       
-    @media screen and (max-width: $before-tablet){
+    @media screen and (min-width: $mobile) and (max-width: $before-tablet){
         max-width: 210px;
         flex-basis: 100%/2;
         
