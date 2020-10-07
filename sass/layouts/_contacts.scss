@@ -12,6 +12,7 @@
  }
 
 .contact-list__link{
+    font-weight: 500;
     display: inline-flex;
     color: $paragraph-color;
     transition: color 250ms $timing-cubic;
@@ -29,7 +30,9 @@
             margin-bottom: 0;
         }
     }
-    
+    @media screen and (min-width: $tablet) and (max-width: $before-desktop){
+        font-size: 12px;
+    }
     &:hover,
     &:focus{
     color: $selection-color;
@@ -43,6 +46,11 @@
     margin-right: 10px;
     fill: $icon-color;
     transition: fill 250ms $timing-cubic;
+
+    @media screen and (min-width: $tablet) and (max-width: $before-desktop){
+        height: 12px;
+        margin-right: 8px;
+    }
 
     .contact-list__link:hover &,
     .contact-list__link:focus &{

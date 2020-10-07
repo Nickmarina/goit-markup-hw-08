@@ -40,13 +40,27 @@
 }
 
 .menu-container{
+    @media screen and (max-width: $before-tablet){
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 60px;
+        background-color: $white-color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;   
+    }
+    
     @media screen and (min-width: $tablet){
         display: flex;
         align-items: center;
     }
 
     @media screen and (min-width: $desktop){
+        width: 100%;
+        justify-content: start;
         align-items: baseline;
-    }
+    } 
 }
 

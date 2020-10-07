@@ -5,6 +5,10 @@
     color: $white-color;
     text-align: center;
 
+    @media screen and (min-width: $desktop){
+        text-align: left;
+    }
+
     .footer{
         @media screen and (min-width: $tablet){
             display:flex;
@@ -12,7 +16,6 @@
             align-items: baseline; 
             flex-wrap: wrap;
         }
-        
     }
 }
 

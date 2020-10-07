@@ -5,7 +5,6 @@
     
     
     .navigation{
-
         @media screen and (min-width: $tablet) {
             display: flex;
             justify-content: space-between;
@@ -13,7 +12,7 @@
         }   
 
         @media screen and (min-width: $desktop){
-            justify-content: start;          
+            justify-content: start;  
         }
     }
 
