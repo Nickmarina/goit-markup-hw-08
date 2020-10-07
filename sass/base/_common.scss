@@ -2,10 +2,6 @@ html{
     box-sizing: border-box;
 }
 
-// body{
-//     position: relative;
-// }
-
 /* обнуление margins */
 h1,
 h2,
@@ -27,10 +23,16 @@ ul{
 /* cписки-ссылок */
 ul a{
     color:inherit;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+    font-family: inherit;
+    // font-weight: 500;
+    // font-size: 18px;
+    // line-height: 1.16;
+    // letter-spacing: 0.02em;
+
+    // @media screen and (min-width: $tablet){
+    //     font-size: 14px;
+    //     line-height: 1.14px;
+    
 }
 
 a{

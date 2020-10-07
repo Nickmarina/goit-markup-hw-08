@@ -1,7 +1,16 @@
 .main-page{
+    position: relative;
+    display: inline-block;
     color: $selection-color;
+    
+    @media screen and (max-width: $before-tablet){
+        padding-bottom: 8px;
+    }
+    @media screen and (min-width: $tablet){
+        padding-bottom: 32px;
+    }
 
-
+    
     &::after{
         position: absolute;
         
