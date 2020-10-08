@@ -19,13 +19,12 @@
     
     @media screen and (min-width: $tablet){
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
 
     @media screen and (min-width: $desktop){
         width: 100%;
         justify-content: start;
-        align-items: baseline;
     } 
 }
 

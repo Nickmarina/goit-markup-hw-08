@@ -1,6 +1,6 @@
 /* hero */
 .overlay{
-    max-width: $mobile;
+    max-width: 1600px;
     padding-top: 118px; 
     padding-bottom: 118px;
     margin-left: auto;   
@@ -19,12 +19,7 @@
             background-image: url(../images/main-page/hero-img@2x.jpg);
     }
 
-    @media screen and (min-width: $tablet){
-        max-width: $tablet; 
-    }
-
     @media screen and (min-width: $desktop){
-        max-width: 1600px;
         padding-top: 200px; 
         padding-bottom: 200px;   
     }
